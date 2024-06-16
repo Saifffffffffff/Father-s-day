@@ -107,10 +107,31 @@
             opacity: 1;
         }
     }
+	/* Media queries for responsiveness */
+
+        /* For smaller devices like phones */
+        @media only screen and (max-width: 768px) {
+            .paper {
+                padding: 10px; /* Adjust padding for smaller screens */
+                font-size: 16px; /* Adjust font size for smaller screens */
+            }
+
+            .paper:nth-of-type(3n) {
+                background-position: center center; /* Adjust background position */
+            }
+        }
+
+        /* For larger devices like desktops */
+        @media only screen and (min-width: 769px) {
+            .paper {
+                padding: 20px 100px; /* Keep original padding for larger screens */
+                font-size: 20px; /* Keep original font size for larger screens */
+            }
+        }
 </style>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Father's Day ❤️</title>
     <link rel='stylesheet'
         href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
