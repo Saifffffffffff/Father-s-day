@@ -7,135 +7,113 @@
     <title>Happy Mother's Day ❤️</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
-        body {
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-size: cover;
-            background-image: url("Image3.jpg");
-            background-position: center center;
-            margin: 0; /* Reset default margin */
-            padding: 0; /* Reset default padding */
+    body {
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100%;
+        background-image: url("Image6.jpg");
+        background-position: center center;
+    }
+
+    .paper {
+        background-image: url("Image3.jpg");
+        background-size: 500px;
+        background-position: center center;
+        padding: 20px 100px;
+        transform: rotateZ(-5deg);
+        box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+        position: absolute;
+    }
+
+    .paper.heart {
+        position: center;
+        width: 200px;
+        height: 200px;
+        padding: 0;
+        border-radius: 50%;
+    }
+	.paper.heart1 {
+        position: center;
+		background-image: url('Image8.png');
+        width: 200px;
+        height: 200px;
+        padding: 0;
+        border-radius: 50%;
+
+    }
+
+   .paper.image {
+    
+    
+	}
+
+	.paper.image img {
+    max-height: 300px; /* Adjust this value to change the maximum height */
+    width: auto; /* This allows the image to maintain its aspect ratio */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+	}
+
+
+
+    .paper.image p {
+        font-size: 18px;
+    }
+
+    img {
+        max-height: 150px;
+        width: 100%;
+        user-select: none;
+    }
+
+    .paper.heart::after {
+        content: "";
+        background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 0.6;
+    }
+
+    .paper:nth-of-type(3n) {
+        background-position: left top;
+    }
+
+    p {
+        font-family: 'Georgia';
+        font-size: 30px;
+        color: rgb(0, 0, 100);
+        opacity: 0.75;
+        user-select: none;
+
+    }
+
+    .loveTEXT {
+        font-family: georgian;
+        color: #800080;
+        font-size: 18px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
         }
 
-        .paper {
-            background-image: url("image4.jpg");
-            background-size: 500px;
-            font-size: 20px;
-            background-position: center center;
-            padding: 20px 100px;
-            transform: rotateZ(-5deg);
-            box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
-            position: absolute;
+        to {
+            opacity: 1;
         }
-
-        .paper.heart {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            padding: 0;
-            border-radius: 50%;
-        }
-
-        .paper.image {
-            padding: 10px;
-        }
-
-        .paper.image p {
-            font-size: 30px;
-        }
-
-        img {
-            max-width: 100%; /* Make images responsive */
-            height: auto; /* Ensure aspect ratio is maintained */
-            user-select: none;
-        }
-
-        .paper.heart::after {
-            content: "";
-            background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-size: 150px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            opacity: 0.6;
-        }
-
-        .paper:nth-of-type(3n) {
-            background-position: left top;
-        }
-
-        p {
-            font-family: 'Georgia';
-            font-size: 50px;
-            color: yellow;
-            opacity: 0.75;
-            user-select: none;
-        }
-
-        .loveTEXT {
-            font-family: georgian;
-            color: #e91e63;
-            font-size: 25px;
-        }
-
-        .loverbtn {
-            font-size: 20px;
-            padding: 12px 24px;
-            margin: 10px;
-            border: none;
-            border-radius: 20px;
-            background-color: #ff4081;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-group {
-            text-align: center;
-        }
-
-        #popup {
-            display: none;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 999;
-            width: 90%; /* Adjust width for smaller screens */
-            max-width: 400px; /* Set a maximum width */
-            font-family: 'Dancing Script', cursive;
-            font-size: 24px;
-            color: #e91e63;
-        }
-
-        #popup.fade-in {
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Media queries for responsiveness */
+    }
+	/* Media queries for responsiveness */
 
         /* For smaller devices like phones */
         @media only screen and (max-width: 768px) {
@@ -156,7 +134,7 @@
                 font-size: 20px; /* Keep original font size for larger screens */
             }
         }
-    </style>
+</style>
 </head>
 
 <body>
